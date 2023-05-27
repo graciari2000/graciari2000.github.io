@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/a-k-brand-board-your-branding-colors-and-fonts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "graciari2000.github.io",
+		"liveServer.settings.port": 5501
+	}
+}
