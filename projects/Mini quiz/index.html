@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini quiz</title>
+</head>
+<body>
+    <!--Creer un form de cinq questions avec trois boutons radios chacune-->
+    <form action="" method="get">
+        <h1>Mini quiz</h1>
+        <h3>Question 1: What is the capital of Tunisia?</h3>
+        <input type="radio" name="question1" value="Tunis" placeholder="Tunis" id="Tunis">
+        <label for="question1">Tunis</label><br>
+        <input type="radio" name="question1" value="Paris" placeholder="Paris" id="Paris">
+        <label for="question1">Paris</label><br>
+        <input type="radio" name="question1" value="Sfax" placeholder="Sfax" id="Sfax">
+        <label for="question1">Sfax</label><br>
+
+        <h3>Question 2: Inside which HTML element do we put the Javascript?</h3>
+        <input type="radio" name="question2" value="script " placeholder=" script">
+        <label for="question2">script</label><br>
+        <input type="radio" name="question2" value=" scripting" placeholder="scripting ">
+        <label for="question2">scripting</label><br>
+        <input type="radio" name="question2" value="body " placeholder=" body">
+        <label for="question2">body</label><br>
+
+        <h3>Question 3: How do you write "Hello World" in an alert box?</h3>
+        <input type="radio" name="question3" value="window.alert " placeholder="window.alert ">
+        <label for="question3">window.alert</label><br>
+        <input type="radio" name="question3" value="document.write" placeholder="document.write">
+        <label for="question3">document.write</label><br>
+        <input type="radio" name="question3" value="console.log" placeholder="console.log">
+        <label for="question3">console.log</label><br>
+
+        <h3>Question 4: How do you create a function in Javascript?</h3>
+        <input type="radio" name="question4" value="function1" placeholder="function1">
+        <label for="question4">function myfunction</label><br>
+        <input type="radio" name="question4" value="function2" placeholder="function2">
+        <label for="question4">function = myfunction</label><br>
+        <input type="radio" name="question4" value="function3" placeholder="function3">
+        <label for="question4">function : myfunction</label><br>
+
+        <h3>Question 5: How can you add a comment in Javascript?</h3>
+        <input type="radio" name="question5" value="single" placeholder="single">
+        <label for="question5">//</label><br>
+        <input type="radio" name="question5" value="multiple" placeholder="multiple">
+        <label for="question5">/* */</label><br>
+        <input type="radio" name="question5" value="hyphens" placeholder="hyphens">
+        <label for="question5">--</label><br><br>
+        <button type="submit" onclick="quiz()" id="confirmButton">Confirm</button>
+    </form>
+    <br>
+    <div id="score"></div>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
