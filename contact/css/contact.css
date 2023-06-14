@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
 
-body {
+* {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #282d3f;
-    color: #fff;
 }
+
+body {
+    background-color: #f8f8f8;
+    color: #363795;
+}
+
 /*Styling the navbar*/
 nav li {
     display: inline;
@@ -14,10 +18,9 @@ nav li {
 }
 
 nav a {
-    
     list-style: none;
     text-decoration: none;
-    color: #fff;
+    color: #363795;
 }
 
 .container nav {
@@ -28,3 +31,118 @@ nav a {
 .container {
     display: flex;
 }
+
+.form-container {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #282d3f;
+  background:#363795;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 70px auto;
+}
+
+.form-container form .descr {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f8f8f8;
+  margin: 30px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  margin-right: 10px;
+}
+
+.input, textarea {
+  margin: 1em 0 1em 0;
+  width: 300px;
+  position: relative;
+}
+
+.input input, textarea {
+  font-size: 100%;
+  padding: 0.7em;
+  outline: none;
+  color: #f8f8f8;
+  border: none;
+  border-bottom: 2px solid #f8f8f8;
+  background: transparent;
+  border-radius: none;
+  width: 100%;
+  resize: none;
+}
+
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  color: #f8f8f8;
+  padding: 0.7em;
+  margin-left: 0.1em;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.input textarea:focus ~ label,
+.input textarea:valid ~ label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: #363795;
+}
+
+.form button {
+  color: #f8f8f8;
+  font-size: 15px;
+  align-self: flex-start;
+  padding: 0.6em;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.form button:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form button:hover:before {
+  opacity: 0.2;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+

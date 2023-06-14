@@ -18,14 +18,23 @@
         </ul>
     </nav>
     </div>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your name"><br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Your email"><br>
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea><br>
-        <input type="submit" value="Send">
-    </form>
+    <div class="form-container">
+        <form class="form">
+            <div class="descr">Leave a Message :)</div>
+            <div class="input">
+                <input required="" autocomplete="off" type="text" aria-label="Name" placeholder="Name">
+            </div>
+
+            <div class="input">
+                <input required="" autocomplete="off" name="email" type="text" aria-label="email" placeholder="Email">
+            </div>
+
+            <div class="input">
+                <textarea required="" cols="30" rows="1" id="message" aria-label="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit">Send →</button>
+        </form>
+    </div>
+
 </body>
 </html>

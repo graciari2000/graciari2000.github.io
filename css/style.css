@@ -51,7 +51,7 @@ nav a {
 }
 
 .fa-arrow-down {
-    color: #ffffff;
+    color: #f8f8f8;
     margin-top: 150px;
 }
 
@@ -64,6 +64,6 @@ footer {
 }
 
 .fa-brands {
-    color: #d3d3d3;
+    color: gray;
     opacity: 0.5;
 }
