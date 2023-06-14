@@ -57,4 +57,8 @@ function play(userChoice) {
         randomScoreValue++;
         randomScore.innerHTML = randomScoreValue;
     }
+    else if (result.innerHTML === 'Tie!') {
+        userScoreValue = userScoreValue;
+        randomScoreValue = randomScoreValue;
+    }
 }
