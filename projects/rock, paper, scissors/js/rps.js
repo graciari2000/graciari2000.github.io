@@ -44,15 +44,17 @@ function play(userChoice) {
         randomImage.src = './img/paper.png';
         result.innerHTML = 'You win!';
     }
-    //display the score
+    //display the score in a new variable
     let userScore = document.getElementById('userScore');
     let randomScore = document.getElementById('randomScore');
     let userScoreValue = parseInt(userScore.innerHTML);
     let randomScoreValue = parseInt(randomScore.innerHTML);
     if (result.innerHTML === 'You win!') {
-        userScore.innerHTML = userScoreValue + 1;
+        userScoreValue++;
+        userScore.innerHTML = userScoreValue;
     }
     else if (result.innerHTML === 'You lose!') {
-        randomScore.innerHTML = randomScoreValue + 1;
+        randomScoreValue++;
+        randomScore.innerHTML = randomScoreValue;
     }
 }
