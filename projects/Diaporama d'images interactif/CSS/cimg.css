@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*Styling the navbar*/
+nav li {
+    display: inline;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a {
+    
+    list-style: none;
+    text-decoration: none;
+    color: #0078d7;
+}
+
+.container nav {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+/* The images are too large */
+img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+/* Position the previous and next buttons */
+.button-container {
+    position: relative;
+}
+.button-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.button-container button.previous {
+    left: 0;
+    /*poition the button */
+            
+}
+.button-container button.next {
+    right: 0;
+    margin: 50px;
+}
