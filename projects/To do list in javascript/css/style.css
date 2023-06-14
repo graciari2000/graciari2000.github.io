@@ -4,6 +4,30 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+/*Styling the navbar*/
+nav li {
+    display: inline;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a {
+    
+    list-style: none;
+    text-decoration: none;
+    color: #0078d7;
+}
+
+.container nav {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
 ul li {
     list-style-type: none;
     margin: 0;
