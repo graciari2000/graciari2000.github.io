@@ -9,6 +9,10 @@ body {
     color: #363795;
 }
 
+::placeholder {
+  color: #fff;
+}
+
 /*Styling the navbar*/
 nav li {
     display: inline;
