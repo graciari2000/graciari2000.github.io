@@ -13,7 +13,6 @@ nav li {
 }
 
 nav a {
-    
     list-style: none;
     text-decoration: none;
     color: #0078d7;
@@ -25,13 +24,12 @@ nav a {
 }
 
 .container {
+    background-color: #fff;
     display: flex;
 }
 
-ul li {
+nav ul li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -53,15 +51,11 @@ button:hover {
     border: 3px solid #EEA47F;
 }
 
-#todoForm {
-    text-align: center;
-}
-
 body {
     background-color: #00539C;
 }
 
-ul {
+form ul {
     color: #fff;
     opacity: 0.9;
     text-align: center;
@@ -70,7 +64,11 @@ ul {
     padding: 50px;
 }
 
-li {
-    
+form ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#todoForm {
     text-align: center;
 }

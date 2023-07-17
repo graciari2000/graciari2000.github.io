@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="./css/todo.css">
     <script src="./js/todo.js"></script>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ45HGZ1V7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BZ45HGZ1V7');
+</script>
+
 <body>
 
     <div class="container">
@@ -22,10 +33,12 @@
 
     <!--Create a form-->
     <h1>Todo List</h1>
+    <div class="form-container">
     <form id="todoForm">
         <input type="text" id="taskInput" placeholder="Enter a task">
         <button type="submit" onclick="display()">Add Task</button>
     </form>
     <ul id="taskList"></ul>
+    </div>
 </body>
 </html>
