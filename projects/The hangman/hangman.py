@@ -20,9 +20,14 @@ def hangman():
 
     print("Welcome to Hangman!")
     print("You have 6 attempts to guess the word.")
-    
+
     while attempts > 0:
-        print("\n" + display_word(word_to_guess, guessed_letters))
+        display = display_word(word_to_guess, guessed_letters)
+        if display == word_to_guess:
+            print("\nCongratulations! You guessed the word:", word_to_guess)
+            break
+
+        print("\n" + display)
         guess = input("Enter a letter: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():
@@ -39,15 +44,8 @@ def hangman():
             attempts -= 1
             print("Incorrect guess. Attempts left:", attempts)
 
-        if set(word_to_guess) == set(guessed_letters):
-            print("\nCongratulations! You guessed the word:", word_to_guess)
-            break
-
     else:
         print("\nGame over! The word was:", word_to_guess)
 
 if __name__ == "__main__":
     hangman()
-
-
-    
