@@ -1,31 +1,4 @@
 import random
-from pyte import Screen
-from pyte.streams import ByteStream
-from io import StringIO
-
-def start_xterm_terminal():
-    # Create a ByteStream to capture the terminal output
-    output_stream = StringIO()
-    # Create a Screen object to render the terminal output
-    screen = Screen(80, 24, stream=output_stream)
-    
-    # Run a simple shell command (you can replace this with your game logic)
-    command = "echo 'Hello, Xterm Terminal!'"
-    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout, stderr = process.communicate()
-    
-    # Feed the command output to the terminal screen
-    for char in stdout.decode():
-        screen.input_byte(ord(char))
-    
-    # Get the terminal output
-    terminal_output = output_stream.getvalue()
-    
-    # Print or return the terminal output as needed
-    print(terminal_output)
-
-# Call the function to start the Xterm terminal
-start_xterm_terminal()
 
 def choose_word():
   words = [
