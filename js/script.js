@@ -1,29 +1,18 @@
-// Add smooth scrolling to navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('cv-container').appendChild(renderer.domElement);
 
-        // Handle contact form submission
-        const form = document.getElementById('contact-form');
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+        // Create 3D objects and add them to the scene
 
-            const formData = new FormData(form);
-            const xhr = new XMLHttpRequest();
+        const animate = () => {
+            requestAnimationFrame(animate);
 
-            xhr.open('POST', '/submit-form.php');
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    alert('Thanks for your message! I will be in touch soon.');
-                } else {
-                    alert('There was a problem submitting your message. Please try again later.');
-                }
-            };
-            xhr.send(formData);
-        });
+            // Update object properties for animation
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
