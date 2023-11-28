@@ -6,7 +6,7 @@
 
 body {
     background-color: #f8f8f8;
-    color: #363795;
+    color: #0078d7;
 }
 
 ::placeholder {
@@ -24,7 +24,7 @@ nav li {
 nav a {
     list-style: none;
     text-decoration: none;
-    color: #363795;
+    color: #0078d7;
 }
 
 .container nav {
@@ -45,7 +45,7 @@ nav a {
   position: relative;
   border-radius: 3px;
   border: 1px solid #282d3f;
-  background:#363795;
+  background: #0078d7;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 70px auto;
 }
@@ -112,7 +112,7 @@ nav a {
 }
 
 .inputGroup :is(input:focus, input:valid) {
-  border-color: #363795;
+  border-color: #0078d7;
 }
 
 .form button {
