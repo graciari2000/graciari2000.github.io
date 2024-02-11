@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
 
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 50px;
+}
+
+#col1 {
+    grid-row: 1 / 2;
+    }
+
+#col2 {
+    grid-row: 1 / 4;
+}
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: #282d3f;
