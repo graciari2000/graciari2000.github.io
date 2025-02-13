@@ -4,3 +4,10 @@ body {
     background-color: #30312C;
     color: #f3f3f8;
 }
+
+.title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
