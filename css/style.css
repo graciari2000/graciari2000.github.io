@@ -5,9 +5,8 @@ body {
     color: #f3f3f8;
 }
 
-.title {
+main {
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin-top: 300px;
 }
